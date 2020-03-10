@@ -15,7 +15,12 @@ type HandlerDependency struct {
 	tokenDIH *handler.AuthI
 }
 
+func HomeEndpoint(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintln(w, "Hello world :)")
+}
+
 func router(in HandlerDependency) {
+	http.HandleFunc("/", HomeEndpoint)
 	http.HandleFunc("/getNToken", in.tokenDIH.GetToken)
 	http.HandleFunc("/SignUp", in.userDIH.SignUp)
 	http.HandleFunc("/getUser", in.userDIH.GetUser)
