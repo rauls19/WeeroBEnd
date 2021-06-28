@@ -15,7 +15,7 @@
 
 ## Test on Local
 
-- Install Dbeaver [[Reference] (https://dbeaver.io/download/)]
+- Install Dbeaver [[Reference](https://dbeaver.io/download/)]
 - Create a postgres local instance [[Reference](https://www.microfocus.com/documentation/idol/IDOL_12_0/MediaServer/Guides/html/English/Content/Getting_Started/Configure/_TRN_Set_up_PostgreSQL.htm)]
 - Create a local postgres database in Dbeaver
 - Go to root of the project and open a terminal
